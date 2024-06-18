@@ -7,7 +7,7 @@ const Navbar = () => {
   const [OpenMenu, setOpenMenu] = useState(null);
 
   const [navbarScroll, setNavbarScroll] = useState(null);
-  const scrollTopPx = 72;
+  const scrollTopPx = 22;
 
   const handleOpenMenu = () => {
     setOpenMenu(!OpenMenu);
@@ -34,7 +34,7 @@ const Navbar = () => {
       <div
         className={`px-12 md:px-[11%] lg:px-[22%] py-6 mx-auto font-semibold text-gray-50 ${
           navbarScroll
-            ? "bg-gray-50 text-zinc-900 transition duration-200 ease-in-out shadow-lg"
+            ? "bg-gray-50/80 text-zinc-900 transition duration-200 ease-in-out shadow-lg"
             : "bg-transparent"
         }`}
       >
