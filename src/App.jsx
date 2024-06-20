@@ -5,9 +5,9 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="bg-[#2d3333fd] pt-[6.75rem] lg:pt-[7.25rem] overflow-hidden">
+    <div className="bg-[#2d3333fd] pt-[6.75rem] lg:pt-[7.25rem] overflow-hidden z-20">
       {/* landing page */}
-      <Navbar />
+      <Navbar scrollY={scrollY} />
       <div className="flex flex-col gap-2 items-center">
         <Hero />
         <PostHero />

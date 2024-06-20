@@ -6,13 +6,16 @@ const Footer = () => {
       <span>© {new Date().getFullYear()}. All rights reserved.</span>
 
       <ul className="flex gap-3 font-semibold text-sm">
-        <li>jonaanw</li>
-        <li>Donation</li>
+        <li>
+          <a href="#">@jona</a>
+        </li>
       </ul>
 
       <div className="flex gap-2">
         {footer.map((el) => (
-          <>{el.title}</>
+          <a href={el.url} className="cursor-pointer" key={el.id}>
+            <img src={el.iconUrl} alt={el.title} width={24} />
+          </a>
         ))}
       </div>
     </div>

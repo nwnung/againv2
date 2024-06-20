@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import NavLinks from "./Nav-Links";
 import MobileMenu from "./MobileMenu";
 
-const Navbar = () => {
+const Navbar = ({ scrollY }) => {
   const [OpenMenu, setOpenMenu] = useState(null);
 
   const [navbarScroll, setNavbarScroll] = useState(null);
@@ -34,8 +34,8 @@ const Navbar = () => {
       <div
         className={`px-12 md:px-[11%] lg:px-[22%] py-6 mx-auto font-semibold text-gray-50 ${
           navbarScroll
-            ? "bg-gray-50/80 text-zinc-900 transition duration-200 ease-in-out shadow-lg"
-            : "bg-transparent"
+            ? "p-4 bg-gray-50 text-zinc-900 transition ease-in-out after:content-[''] after:left-0 after:absolute after:top-full after:backdrop-blur-sm after:h-3 after:w-full after:bg-gradient-to-t from-transparent to-gray-50"
+            : "bg-transparent transition duration-200"
         }`}
       >
         <nav className="flex justify-between items-center">

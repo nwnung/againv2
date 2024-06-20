@@ -2,7 +2,7 @@ import { navbar } from "../constants";
 
 const MobileMenu = () => {
   return (
-    <div className="flex flex-col gap-y-3 h-28 w-28 p-1 rounded bg-gray-200 text-black absolute right-7 top-[30px] text-sm items-center justify-center">
+    <div className="z-10 flex flex-col gap-y-3 h-28 w-28 p-1 rounded bg-gray-200 text-black absolute right-7 top-[30px] text-sm items-center justify-center">
       {/* menu? */}
       {navbar.map((link) => {
         return (
