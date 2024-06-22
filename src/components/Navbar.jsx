@@ -34,7 +34,7 @@ const Navbar = ({ scrollY }) => {
       <div
         className={`px-12 md:px-[11%] lg:px-[22%] py-6 mx-auto font-semibold text-gray-50 ${
           navbarScroll
-            ? "p-4 bg-gray-50 text-zinc-900 transition ease-in-out after:content-[''] after:left-0 after:absolute after:top-full after:backdrop-blur-sm after:h-3 after:w-full after:bg-gradient-to-t from-transparent to-gray-50"
+            ? "p-4 bg-gray-50 text-zinc-900 transition ease-in-out shadow"
             : "bg-transparent transition duration-200"
         }`}
       >
