@@ -7,7 +7,7 @@ const Footer = () => {
 
       <ul className="flex gap-3 font-semibold text-sm">
         <li>
-          <a href="#">@jona</a>
+          <a href="https://github.com/nwnung">@jona</a>
         </li>
       </ul>
 

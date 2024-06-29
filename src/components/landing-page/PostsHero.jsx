@@ -13,6 +13,7 @@ const PostHero = ({ handleopenPopUp }) => {
               desc={el.about}
               img={el.img}
               key={el.id}
+              link={el.link}
               handleopenPopUp={handleopenPopUp}
             />
           ))}
