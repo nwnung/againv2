@@ -10,7 +10,6 @@ function App() {
 
   const handleopenPopUp = () => {
     setOpenPopUp(true);
-    console.log("se abrio el pop up");
 
     setTimeout(() => {
       setOpenPopUp(false);
@@ -19,7 +18,7 @@ function App() {
   };
 
   return (
-    <div className="pt-[6.75rem] lg:pt-[7.25rem] overflow-hidden">
+    <div className="pt-[5.75rem] lg:pt-[5rem] overflow-hidden">
       {/* landing page */}
       <Navbar scrollY={scrollY} />
       <div className="flex flex-col gap-2 items-center">

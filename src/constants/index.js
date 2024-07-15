@@ -2,10 +2,6 @@ import { discord, nwCar, nwPic, nwShop } from "../assets";
 
 export const navbar = [
   {
-    label: "Home",
-    url: "/",
-  },
-  {
     label: "About",
     url: "/about",
   },
@@ -37,7 +33,7 @@ export const proyects = [
     about: "nw shop is a store with curious items for your set up.",
     img: nwShop,
     id: "3",
-    link: "https://github.com/nwnung/nwCar",
+    link: "https://github.com/nwnung/nwShop",
   },
 ];
 

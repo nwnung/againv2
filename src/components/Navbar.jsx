@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import NavLinks from "./Nav-Links";
 import MobileMenu from "./MobileMenu";
 
-const Navbar = ({ scrollY }) => {
+const Navbar = () => {
   const [OpenMenu, setOpenMenu] = useState(null);
 
   const [navbarScroll, setNavbarScroll] = useState(null);
@@ -42,10 +42,10 @@ const Navbar = ({ scrollY }) => {
           {/* logo section */}
           <div className="flex gap-5">
             <a
-              href="#"
-              className="hover:opacity-65 duration-300 after:content-['v2'] after:absolute after:top-[10%] font-bold"
+              href="/"
+              className="hover:opacity-65 duration-300 after:content-['nation'] after:absolute after:top-[20%] font-bold after:text-xs text-xl"
             >
-              again
+              nw
             </a>
           </div>
           <NavLinks />
